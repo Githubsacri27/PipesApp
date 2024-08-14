@@ -1,11 +1,11 @@
 # AngularPipesApp
 
-Esta aplicación de Angular fue desarrollada con el objetivo de aprender y practicar el uso de **Pipes** en Angular. Los Pipes son una poderosa característica de Angular que permite transformar datos directamente en las plantillas. Este proyecto incluye ejemplos de uso de pipes básicos y avanzados, así como la integración de componentes de PrimeNG para mejorar la interfaz de usuario.
+Esta aplicación de Angular fue desarrollada con el objetivo de aprender y practicar el uso de **Pipes** en Angular. Este proyecto incluye ejemplos de uso de pipes básicos y algunos personalizados, así como la integración de componentes de PrimeNG para mejorar la interfaz de usuario.
 
 ## Características
 
 - **Uso de Pipes Comunes**: Ejemplos de pipes como `uppercase`, `lowercase`, `titlecase`, `date`, `currency`, `number`, etc.
-- **Pipes Personalizados**: Demostración de pipes personalizados y menos comunes como `slice`, `json`, `keyvalue`, `async`, `i18nSelect`, `i18nPlural`.
+- **Pipes Personalizados**: Demostración de pipes como`slice`, `json`, `keyvalue`, `async`, `i18nSelect`, `i18nPlural`.
 - **Menú Dinámico**: Implementación de un menú utilizando PrimeNG con rutas dinámicas que permiten navegar entre diferentes páginas que muestran el uso de distintos pipes.
 - **Organización Modular**: La aplicación está estructurada en módulos para una mejor organización y escalabilidad.
 - **Integración de PrimeNG**: Uso de componentes de PrimeNG como `p-menubar`, `p-card`, `p-panel`, `p-fieldset`, etc., para mejorar la presentación de la interfaz.
@@ -19,6 +19,7 @@ Esta aplicación de Angular fue desarrollada con el objetivo de aprender y pract
   - `BasicsPageComponent`: Muestra el uso de pipes básicos como `uppercase`, `lowercase`, `titlecase`, y `date`.
   - `NumbersPageComponent`: Demuestra el uso de pipes numéricos como `number`, `currency`, y `percent`.
   - `UncommonPageComponent`: Incluye ejemplos de pipes menos comunes como `i18nSelect`, `i18nPlural`, `slice`, `json`, `keyvalue`, y `async`.
+  - `OrderComponent`: Demuestra el uso de pipes personalizados (`SortByPipe`, `ToggleCasePipe`, `CanFlyPipe`) aplicados a una lista de smartphones.
 - **`SharedModule`**: Contiene componentes compartidos como `MenuComponent`, y otros elementos reutilizables a lo largo de la aplicación.
 - **`PrimeNgModule`**: Encapsula todos los módulos de PrimeNG utilizados en la aplicación, facilitando su gestión y uso en diferentes componentes.
 
@@ -29,30 +30,39 @@ Las rutas de la aplicación están configuradas en `AppRoutingModule` y `Product
 - `/` - Página principal con pipes básicos.
 - `/numbers` - Página con pipes numéricos.
 - `/uncommon` - Página con pipes no tan comunes.
+- `/order` - Página que muestra una tabla de smartphones con opciones de ordenamiento dinámico mediante pipes personalizados.
+
+## Recursos Adicionales
+
+- [Documentación de Angular](https://v17.angular.io/docs)
+- [Documentación de PrimeNG](https://primeng.org)
+- [Documentación de PrimeFlex](https://primeflex.org)
 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.1.
+# Generación del Proyecto
 
-## Development server
+Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-cli) versión 18.1.1.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Servidor de Desarrollo
 
-## Code scaffolding
+Ejecuta `ng serve` para iniciar un servidor de desarrollo. Navega a `http://localhost:4200/`. La aplicación se recargará automáticamente si cambias alguno de los archivos fuente.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Creación de Componentes
 
-## Build
+Ejecuta `ng generate component component-name` para generar un nuevo componente. También puedes usar `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Compilación
 
-## Running unit tests
+Ejecuta `ng build` para compilar el proyecto. Los artefactos de compilación se almacenarán en el directorio `dist/`.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Ejecución de Pruebas Unitarias
 
-## Running end-to-end tests
+Ejecuta `ng test` para ejecutar las pruebas unitarias a través de [Karma](https://karma-runner.github.io).
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Ejecución de Pruebas de Extremo a Extremo
 
-## Further help
+Ejecuta `ng e2e` para ejecutar las pruebas de extremo a extremo a través de una plataforma de tu elección. Para usar este comando, primero necesitas agregar un paquete que implemente capacidades de prueba de extremo a extremo.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Ayuda Adicional
+
+Para obtener más ayuda sobre Angular CLI, usa `ng help` o consulta la página [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli).
