@@ -2,6 +2,10 @@
 
 Esta aplicación de Angular fue desarrollada con el objetivo de aprender y practicar el uso de **Pipes** en Angular. Este proyecto incluye ejemplos de uso de pipes básicos y algunos personalizados, así como la integración de componentes de PrimeNG para mejorar la interfaz de usuario.
 
+
+https://github.com/user-attachments/assets/dc6dd3a4-89d5-4631-82d3-5011050e1e3e
+
+
 ## Características
 
 - **Uso de Pipes Comunes**: Ejemplos de pipes como `uppercase`, `lowercase`, `titlecase`, `date`, `currency`, `number`, etc.
